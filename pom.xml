@@ -20,7 +20,7 @@
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Windows64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -34,21 +34,21 @@
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Linux64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Linux_ARM32hf</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Linux_ARM64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
@@ -57,14 +57,14 @@
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-MacOSX64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-MacOSX_ARM64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
@@ -73,7 +73,7 @@
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Windows64</artifactId>
-      <version>5.2.0</version>
+      <version>6.0.0</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
