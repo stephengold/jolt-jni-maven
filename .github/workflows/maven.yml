@@ -9,6 +9,42 @@ on:
     branches: [ "master" ]
 
 jobs:
+  Java17-Linux_ARM64:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - uses: actions/checkout@v7
+    - uses: actions/setup-java@v6
+      with:
+        cache: maven
+        distribution: 'temurin'
+        java-version: '17'
+    - run: mvn -B package --file pom.xml
+
+  Java21-MacOSX_ARM64:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: macos-26
+    steps:
+    - uses: actions/checkout@v7
+    - uses: actions/setup-java@v6
+      with:
+        cache: maven
+        distribution: 'temurin'
+        java-version: '21'
+    - run: mvn -B package --file pom.xml
+
+  Java25-Windows64:
+    if: contains(toJson(github.event.commits), '[ci skip] ') == false
+    runs-on: windows-2025
+    steps:
+    - uses: actions/checkout@v7
+    - uses: actions/setup-java@v6
+      with:
+        cache: maven
+        distribution: 'temurin'
+        java-version: '25'
+    - run: mvn -B package --file pom.xml
+
   Java26-Linux:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
     runs-on: ubuntu-24.04
