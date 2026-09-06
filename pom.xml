@@ -48,7 +48,7 @@
     <dependency>
       <groupId>com.github.stephengold</groupId>
       <artifactId>jolt-jni-Linux_ARM64</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.2</version>
       <classifier>DebugSp</classifier>
       <scope>runtime</scope>
     </dependency>
