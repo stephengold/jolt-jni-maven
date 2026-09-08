@@ -69,6 +69,7 @@ jobs:
           distribution: 'temurin'
           java-version: '25'
       - run: mvn -B package --file pom.xml
+        shell: bash
 
   Java26-Linux:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
