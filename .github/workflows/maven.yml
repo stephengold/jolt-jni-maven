@@ -9,7 +9,7 @@ on:
     branches: ["master"]
 
 jobs:
-  Java17-Linux_ARM64:
+  Java11-Linux_ARM64:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
     runs-on: ubuntu-24.04-arm
     steps:
@@ -18,7 +18,7 @@ jobs:
         with:
           cache: maven
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '11'
       - run: mvn -B package --file pom.xml
 
   Java17-MacOSX64:
