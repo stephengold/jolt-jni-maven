@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
       - run: mvn -B package --file pom.xml
-      - run: mvn exec:java
+      - run: mvn -B exec:java
 
   Java17-MacOSX64:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
@@ -33,7 +33,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - run: mvn -B package --file pom.xml
-      - run: mvn exec:java
+      - run: mvn -B exec:java
 
   Java21-MacOSX_ARM64:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
@@ -46,7 +46,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - run: mvn -B package --file pom.xml
-      - run: mvn exec:java
+      - run: mvn -B exec:java
 
   Java21-Windows_ARM64:
     if: contains(toJson(github.event.commits), '[ci skip] ') == false
@@ -60,7 +60,7 @@ jobs:
           java-version: '21'
       - run: mvn -B package --file pom.xml
         shell: bash
-      - run: mvn exec:java
+      - run: mvn -B exec:java
         shell: bash
 
   Java25-Windows64:
@@ -75,7 +75,7 @@ jobs:
           java-version: '25'
       - run: mvn -B package --file pom.xml
         shell: bash
-      - run: mvn exec:java
+      - run: mvn -B exec:java
         shell: bash
 
   Java27-Linux:
@@ -89,4 +89,4 @@ jobs:
           distribution: 'liberica'
           java-version: '27'
       - run: mvn -B package --file pom.xml
-      - run: mvn exec:java
+      - run: mvn -B exec:java
