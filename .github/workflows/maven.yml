@@ -19,7 +19,7 @@ jobs:
           cache: maven
           distribution: 'temurin'
           java-version: '11'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
       - run: mvn -B exec:java
 
   Java17-MacOSX64:
@@ -32,7 +32,7 @@ jobs:
           cache: maven
           distribution: 'temurin'
           java-version: '17'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
       - run: mvn -B exec:java
 
   Java21-MacOSX_ARM64:
@@ -45,7 +45,7 @@ jobs:
           cache: maven
           distribution: 'temurin'
           java-version: '21'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
       - run: mvn -B exec:java
 
   Java21-Windows_ARM64:
@@ -58,7 +58,7 @@ jobs:
           cache: maven
           distribution: 'temurin'
           java-version: '21'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
         shell: bash
       - run: mvn -B exec:java
         shell: bash
@@ -73,7 +73,7 @@ jobs:
           cache: maven
           distribution: 'temurin'
           java-version: '25'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
         shell: bash
       - run: mvn -B exec:java
         shell: bash
@@ -88,5 +88,5 @@ jobs:
           cache: maven
           distribution: 'liberica'
           java-version: '27'
-      - run: mvn -B package --file pom.xml
+      - run: mvn -B package
       - run: mvn -B exec:java
