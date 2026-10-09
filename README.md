@@ -7,7 +7,7 @@ Complete source code is provided under
 [a 3-clause BSD license][license].
 
 
-## How to build jolt-jni-maven from source
+## How to build and run jolt-jni-maven from source
 
 To build the project:
 
@@ -30,6 +30,9 @@ To build the project:
   + using [Git]: `git clone https://github.com/stephengold/jolt-jni-maven.git`
 5. `cd jolt-jni-maven`
 6. `mvn package`
+
+To run the "HelloJoltJni" application:
+  + `mvn exec:java`
 
 
 [adoptium]: https://adoptium.net/temurin/releases/ "Adoptium Project"
