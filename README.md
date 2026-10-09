@@ -1,5 +1,5 @@
 [The jolt-jni-maven project][project] provides
-a sample desktop applications
+a sample desktop application
 for [the Jolt-JNI physics library][joltjni],
 built using Maven and Java.
 
