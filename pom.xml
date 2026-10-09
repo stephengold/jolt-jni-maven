@@ -77,6 +77,13 @@
             <classifier>DebugSp</classifier>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.stephengold</groupId>
+            <artifactId>jolt-jni-Windows_ARM64</artifactId>
+            <version>6.1.1</version>
+            <classifier>DebugSp</classifier>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>
